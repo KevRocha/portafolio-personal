@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+    padding: 40px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative; /* necesario para posicionar nombre y título */
+    min-height: 120px;
+}
+
+/* Nombre en esquina superior izquierda */
+header h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Título debajo del nombre */
+header p {
+    position: absolute;
+    top: 60px; /* ajusta según el espacio del nombre */
+    left: 20px;
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Secciones */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Títulos de sección */
+h2 {
+    color: #4f46e5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #3b82f6;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Tarjetas de proyectos/experiencia */
+.project, .job {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover, .job:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Títulos de trabajos/proyectos */
+.project h3, .job h3 {
+    font-size: 1.3rem;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+/* Contacto */
+.contact p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
